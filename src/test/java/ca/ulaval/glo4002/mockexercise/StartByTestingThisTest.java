@@ -1,12 +1,12 @@
 package ca.ulaval.glo4002.mockexercise;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 
 public class StartByTestingThisTest {
 
     private StartByTestingThis service;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         service = new StartByTestingThis();
     }

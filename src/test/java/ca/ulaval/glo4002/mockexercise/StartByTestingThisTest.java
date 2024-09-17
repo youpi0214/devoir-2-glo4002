@@ -1,7 +1,19 @@
 package ca.ulaval.glo4002.mockexercise;
 
-import org.junit.jupiter.api.BeforeEach;
+import static org.mockito.Mockito.*;
 
+import ca.ulaval.glo4002.mockexercise.do_not_edit.CartFactory;
+import ca.ulaval.glo4002.mockexercise.do_not_edit.Invoice;
+import ca.ulaval.glo4002.mockexercise.do_not_edit.ProductRepository;
+import net.bytebuddy.utility.RandomString;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+@ExtendWith(MockitoExtension.class)
 public class StartByTestingThisTest {
 
   private StartByTestingThis service;
